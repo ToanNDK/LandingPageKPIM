@@ -19,16 +19,16 @@ body {
     margin-top: 50px; 
     margin-left:  80px;
     margin-right: 50px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .left-container p {
     margin-left:  80px;
-    margin-right: 80px; 
+    margin-right: 70px; 
 }
 
 .left-container .button-container {
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center; 
 }
 
@@ -113,24 +113,24 @@ body {
 }
 
 img {
-    max-width: 90%; 
-    width: 70%; 
+    max-width: 80%; 
+    width: 50%; 
     height: auto;
 }
 
 .bottom-container {
     width: 100%;
     height: auto;
-    min-width: 300px;
+    min-width: 150px;
     flex: 1;
     display: flex; 
     justify-content: space-around; 
-    align-items: stretch; 
-    gap: 30px; 
-    margin-top: 200px;
+    /* align-items: stretch;  */
+    /* gap: 30px;  */
+    margin-top: 100px;
     padding: 5px;
-    background-color: rgba(255, 204, 0, 0.158);
-    background-image: url('../images/Background.jpg'); 
+    background-color: rgba(255, 204, 0, 0);
+    /* background-image: url('../images/Background.jpg');  */
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -149,8 +149,8 @@ img {
     max-width: 15%; /* Giới hạn chiều rộng của container */
     border: 1px solid #ddd; 
     border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(5px);
     overflow: hidden; 
@@ -202,9 +202,9 @@ img {
     text-overflow: ellipsis; /* Thêm dấu "..." nếu vượt quá 3 dòng */
 }
 .blog-container {
-    width: 100%;
+    width: 85%;
     height: auto;
-    min-width: 300px;
+    min-width: 200px;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -285,4 +285,47 @@ img {
 
 .blog-right-bottom button:hover {
     background-color: #00a347;
+}
+footer {
+    background-color: #212121;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    max-width: 50%;
+}
+
+.footer-left .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-left .logo span {
+    color: #00C853;
+}
+
+.footer-left p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-right {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.footer-right a:hover {
+    color: #00C853;
 }

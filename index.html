@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page Blog</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/index.css">
     </style>
 </head>
 <body>
     <div class="navbar">
         <div class="logo">
-            COMPA<span>CLASS</span>
+            <!-- <i class="fas fa-graduation-cap"></i> -->
+             COMPA<span>CLASS</span>
         </div>
         <div class="menu">
-            <a href="#">Trang chủ</a>
-            <a href="#">Giá cả</a>
-            <a href="#">Blog</a>
-            <a href="#">Về chúng tôi</a>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-book"></i> Course</a>
+            <a href="#"><i class="fas fa-cogs"></i> Technology</a>
+            <a href="#"><i class="fas fa-project-diagram"></i> Specialize</a>
+            <a href="#"><i class="fas fa-info-circle"></i> About</a>
         </div>
         <div class="login">
-            <a href="#">Login</a>
+            <a href="#"><i class="fas fa-user-plus"></i> Register</a>
+            <a href="#"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+            
         </div>
     </div>
     <div class="container">
@@ -28,7 +34,7 @@
             <h1>Mở rộng tri thức cùng CompaClass</h1>
             <p>Chào mừng bạn đến với CompaClass Blog – nơi chia sẻ những câu chuyện, kiến thức về ngành Công nghệ thông tin! Tại đây, bạn sẽ tìm thấy những bài viết đa dạng, từ mẹo nhỏ hữu ích, trải nghiệm thú vị, đến những hướng dẫn thực hành vô cùng chi tiết.</p>
             <div class="button-container">
-                <a href="#" class="explore-button">Bắt đầu khám phá</a>
+                <a href="/home.html" class="explore-button">Bắt đầu khám phá</a>
             </div>
         </div>
         <div class="right-container">
@@ -39,11 +45,11 @@
     <div class="bottom-container" id="bottom-container">
         <div class="image-text-container">
           
-           <p>Trong thời đại công nghệ số, việc cập nhật và nắm bắt xu hướng mới không chỉ giúp bạn mở rộng kiến thức mà còn mang lại nhiều cơ hội trong học tập, công việc và cuộc sống. Blog của chúng tôi là nơi tập hợp những thông tin, tin tức và kiến thức công nghệ mới nhất, được trình bày một cách dễ hiểu và gần gũi, giúp bạn dễ dàng tiếp cận với những cải tiến vượt bậc trong thế giới số.</p>
+           <p>Trong thời đại công nghệ số, việc cập nhật và nắm bắt xu hướng mới không chỉ giúp bạn mở rộng kiến thức mà còn mang lại nhiều cơ hội trong học tập, công việc và cuộc sống. Blog của chúng tôi là nơi tập hợp những thông tin, tin tức và kiến thức công nghệ mới nhất.</p>
         </div>
         <div class="image-text-container">
             
-            <p>Tại đây, bạn sẽ tìm thấy các bài viết về lập trình, trí tuệ nhân tạo, điện toán đám mây, bảo mật mạng và nhiều lĩnh vực khác. Ngoài ra, chúng tôi cũng chia sẻ các mẹo và công cụ hữu ích để bạn áp dụng công nghệ vào công việc hàng ngày. Tất cả nội dung được biên soạn bởi đội ngũ đam mê công nghệ và mong muốn tạo giá trị cho cộng đồng.</p>
+            <p>Tại đây, bạn sẽ tìm thấy các bài viết về lập trình, trí tuệ nhân tạo, điện toán đám mây, bảo mật mạng và nhiều lĩnh vực khác. Ngoài ra, chúng tôi cũng chia sẻ các mẹo và công cụ hữu ích để bạn áp dụng công nghệ vào công việc hàng ngày. </p>
         </div>
         <div class="image-text-container">
            
@@ -69,7 +75,7 @@
             }
         });
     }, {
-        threshold: 0.2 // Kích hoạt khi 20% container xuất hiện trên màn hình
+        threshold: 0.4 // Kích hoạt khi 20% container xuất hiện trên màn hình
     });
 
     containers.forEach(container => {
@@ -78,27 +84,41 @@
 });
     
     </script>
+    <div class="blog-container">
+        <div class="blog-left">
+            <h2>Câu chuyện blog</h2>
+            <ul>
+                <li><span>✔</span> Hướng dẫn viết bài blog chuyên nghiệp</li>
+                <li><span>✔</span> Các tips để tăng lượt đọc bài viết</li>
+                <li><span>✔</span> Chia sẻ kiến thức về công nghệ</li>
+                <li><span>✔</span> Phát triển nội dung theo xu hướng</li>
+            </ul>
+        </div>
+        <div class="blog-right">
+            <div class="blog-right-top">
+                <h3>95% độc giả hài lòng</h3>
+                <p>Khám phá những bài viết nổi bật giúp bạn thành công hơn trong công việc và cuộc sống.</p>
+            </div>
+            <div class="blog-right-bottom">
+                <button>Đọc thêm</button>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="footer-left">
+            <div class="logo">COMPA<span>CLASS</span></div>
+            
+            <p>&copy; 2024 Kpim — Design Team</p>
+        </div>
+        <div class="footer-right">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+        </div>
+    </footer>
 </body>
-<div class="blog-container">
-    <div class="blog-left">
-        <h2>Câu chuyện blog</h2>
-        <ul>
-            <li><span>✔</span> Hướng dẫn viết bài blog chuyên nghiệp</li>
-            <li><span>✔</span> Các tips để tăng lượt đọc bài viết</li>
-            <li><span>✔</span> Chia sẻ kiến thức về công nghệ</li>
-            <li><span>✔</span> Phát triển nội dung theo xu hướng</li>
-        </ul>
-    </div>
-    <div class="blog-right">
-        <div class="blog-right-top">
-            <h3>95% độc giả hài lòng</h3>
-            <p>Khám phá những bài viết nổi bật giúp bạn thành công hơn trong công việc và cuộc sống.</p>
-        </div>
-        <div class="blog-right-bottom">
-            <button>Đọc thêm</button>
-        </div>
-    </div>
-    
-</div>
+
 
 </html>
