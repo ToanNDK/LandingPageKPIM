@@ -7,28 +7,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/index.css">
-    </style>
 </head>
 <body>
+    
     <div class="navbar">
         <div class="logo">
-            <!-- <i class="fas fa-graduation-cap"></i> -->
              COMPA<span>CLASS</span>
         </div>
         <div class="menu">
-            <a href="index.html"><i class="fas fa-home"></i> Home</a>
-            <a href="#"><i class="fas fa-book"></i> Course</a>
-            <a href="#"><i class="fas fa-cogs"></i> Technology</a>
-            <a href="#"><i class="fas fa-project-diagram"></i> Specialize</a>
-            <a href="#"><i class="fas fa-info-circle"></i> About</a>
+            <a href="index.html"><i class=""></i> Home</a>
+            <a href="#"><i class=""></i> Course</a>
+            <a href="#"><i class=""></i> Technology</a>
+            <a href="#"><i class=""></i> Specialize</a>
+            <a href="#"><i class=""></i> About</a>
         </div>
         <div class="login">
             <a href="#"><i class="fas fa-user-plus"></i> Register</a>
             <a href="#"><i class="fas fa-sign-in-alt"></i> Sign In</a>
-            
         </div>
     </div>
+
     <div class="container">
         <div class="left-container">
             <h1>Mở rộng tri thức cùng CompaClass</h1>
@@ -41,19 +41,16 @@
             <img src="./assets/images/Landing.jpg" alt="">
         </div>
     </div>
-    
+
     <div class="bottom-container" id="bottom-container">
         <div class="image-text-container">
-          
-           <p>Trong thời đại công nghệ số, việc cập nhật và nắm bắt xu hướng mới không chỉ giúp bạn mở rộng kiến thức mà còn mang lại nhiều cơ hội trong học tập, công việc và cuộc sống. Blog của chúng tôi là nơi tập hợp những thông tin, tin tức và kiến thức công nghệ mới nhất.</p>
+           <p>Blog của chúng tôi là nơi tập hợp những thông tin, tin tức và kiến thức công nghệ mới nhất.</p>
         </div>
         <div class="image-text-container">
-            
-            <p>Tại đây, bạn sẽ tìm thấy các bài viết về lập trình, trí tuệ nhân tạo, điện toán đám mây, bảo mật mạng và nhiều lĩnh vực khác. Ngoài ra, chúng tôi cũng chia sẻ các mẹo và công cụ hữu ích để bạn áp dụng công nghệ vào công việc hàng ngày. </p>
+            <p>Chúng tôi chia sẻ các mẹo và công cụ hữu ích để bạn áp dụng công nghệ vào công việc hàng ngày.</p>
         </div>
         <div class="image-text-container">
-           
-            <p>Hãy cùng tham gia vào hành trình khám phá những điều kỳ diệu mà công nghệ mang lại. Đừng ngần ngại để lại ý kiến hoặc chia sẻ những ý tưởng của bạn với chúng tôi. Cảm ơn bạn đã đồng hành, và chúc bạn có những phút giây thú vị tại blog này!</p>
+            <p>Hãy cùng tham gia vào hành trình khám phá những điều kỳ diệu mà công nghệ mang lại. </p>
         </div>
     </div>
 
@@ -62,28 +59,29 @@
         window.onload = function() {
             setTimeout(function() {
                 document.getElementById('bottom-container').classList.add('visible');
-            }, 2000); // Thời gian chờ 1000 ms (1 giây)
+            }, 2000); // Thời gian chờ 2 giây
         };
+
         document.addEventListener("DOMContentLoaded", function () {
-    const containers = document.querySelectorAll('.bottom-container .image-text-container');
+            const containers = document.querySelectorAll('.bottom-container .image-text-container');
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show'); // Thêm class "show" khi container xuất hiện
-                observer.unobserve(entry.target);   // Ngừng quan sát container đã xuất hiện
-            }
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show'); // Thêm class "show" khi container xuất hiện
+                        observer.unobserve(entry.target);   // Ngừng quan sát container đã xuất hiện
+                    }
+                });
+            }, {
+                threshold: 0.4 // Kích hoạt khi 40% container xuất hiện trên màn hình
+            });
+
+            containers.forEach(container => {
+                observer.observe(container); // Quan sát từng container
+            });
         });
-    }, {
-        threshold: 0.4 // Kích hoạt khi 20% container xuất hiện trên màn hình
-    });
-
-    containers.forEach(container => {
-        observer.observe(container); // Quan sát từng container
-    });
-});
-    
     </script>
+
     <div class="blog-container">
         <div class="blog-left">
             <h2>Câu chuyện blog</h2>
@@ -103,12 +101,11 @@
                 <button>Đọc thêm</button>
             </div>
         </div>
-        
     </div>
+
     <footer>
         <div class="footer-left">
             <div class="logo">COMPA<span>CLASS</span></div>
-            
             <p>&copy; 2024 Kpim — Design Team</p>
         </div>
         <div class="footer-right">
@@ -119,6 +116,4 @@
         </div>
     </footer>
 </body>
-
-
 </html>

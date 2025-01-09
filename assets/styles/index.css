@@ -12,42 +12,42 @@ body {
 .left-container {
     flex: 2;
     background-color: #ffffff;
-    padding: 20px;  
+    padding: 20px;
 }
 
 .left-container h1 {
-    margin-top: 50px; 
-    margin-left:  80px;
+    margin-top: 50px;
+    margin-left: 80px;
     margin-right: 50px;
     font-size: 30px;
 }
 
 .left-container p {
-    margin-left:  80px;
-    margin-right: 70px; 
+    margin-left: 80px;
+    margin-right: 70px;
 }
 
 .left-container .button-container {
     margin-top: 20px;
-    text-align: center; 
+    text-align: center;
 }
 
 .button-container .explore-button {
     padding: 20px 20px;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     color: #00C853;
-    border: 2px solid #00C853; 
-    border-radius: 20px; 
+    border: 2px solid #00C853;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 24px;
     transition: background-color 0.3s, color 0.3s;
-    text-decoration: none; 
+    text-decoration: none;
     display: inline-block;
 }
 
 .button-container .explore-button:hover {
-    background-color: #00C853; 
-    color: #ffffff; 
+    background-color: #00C853;
+    color: #ffffff;
 }
 
 .right-container {
@@ -55,7 +55,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff; 
+    background-color: #ffffff;
 }
 
 .navbar {
@@ -68,19 +68,19 @@ body {
 }
 
 .navbar .logo {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
+    color: #000;
 }
 
 .navbar .logo span {
-    color: #00C853;
+    color: #00FFA2;
 }
 
 .navbar .menu {
     display: flex;
-    gap: 20px;
-    flex: 1;
-    justify-content: center; 
+    gap: 40px;
+    justify-content: center;
 }
 
 .navbar .menu a {
@@ -94,16 +94,11 @@ body {
     color: #00C853;
 }
 
-.navbar .login {
-    font-size: 16px;
-}
-
 .navbar .login a {
     text-decoration: none;
-    color: black;
-    padding: 10px 20px;
-    background-color: #00C853; 
     color: white;
+    padding: 10px 20px;
+    background-color: #00FFA2;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
@@ -113,94 +108,96 @@ body {
 }
 
 img {
-    max-width: 80%; 
-    width: 50%; 
+    max-width: 80%;
+    width: 50%;
     height: auto;
 }
 
 .bottom-container {
-    width: 100%;
-    height: auto;
-    min-width: 150px;
-    flex: 1;
-    display: flex; 
-    justify-content: space-around; 
-    /* align-items: stretch;  */
-    /* gap: 30px;  */
-    margin-top: 100px;
-    padding: 5px;
-    background-color: rgba(255, 204, 0, 0);
-    /* background-image: url('../images/Background.jpg');  */
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    border-radius: 20px; 
-    opacity: 0; /* Ẩn các container */
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Hiệu ứng mờ dần và dịch chuyển */
-    transform: translateY(-20px); /* Dịch chuyển lên trên 20px khi ẩn */
-}
-
-.bottom-container.visible {
-    opacity: 1; /* Hiện các container */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    transition: opacity 1s ease-in-out;
 }
 
 .bottom-container .image-text-container {
-    flex: 0 1 calc(30% - 20px); /* Đặt kích thước của container nhỏ lại */
-    max-width: 15%; /* Giới hạn chiều rộng của container */
-    border: 1px solid #ddd; 
-    border-radius: 10px;
-    padding: 15px;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(5px);
-    overflow: hidden; 
-    opacity: 0; /* Ẩn container ban đầu */
-    transform: translateY(50px); /* Dịch chuyển xuống 50px */
-    transition: opacity 0.8s ease, transform 0.8s ease; /* Hiệu ứng chuyển động */
-}
-.bottom-container .image-text-container.show {
-    opacity: 1; /* Hiển thị container */
-    transform: translateY(0); /* Di chuyển về vị trí ban đầu */
-}
-
-.bottom-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.image-text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    align-items: center;
-    text-align: center;
-    flex: 1; 
+    flex: 0 1 calc(30% - 20px);
+    height: 200px;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    background: rgba(255, 255, 255, 0.7); 
-    backdrop-filter: blur(5px); 
+    border-radius: 50px;
+    padding: 15px;
+   
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    
 }
 
-.image-text-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+.bottom-container .image-text-container:nth-child(1) {
+    background-color: #FFFFFF - 60%;
+}
+
+.bottom-container .image-text-container:nth-child(2) {
+    background-color: #FFFFFF;
+}
+
+.bottom-container .image-text-container:nth-child(3) {
+    background-color: #FFFFFF;
+}
+
+.bottom-container .image-text-container:hover {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .bottom-container .image-text-container p {
-    margin-top: 10px;
-    font-size: 16px; 
+    font-size: 14px;
     color: #333;
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* Giới hạn 3 dòng */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis; /* Thêm dấu "..." nếu vượt quá 3 dòng */
+    line-height: 1.5;
 }
+
+footer {
+    background-color: #212121;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    max-width: 50%;
+}
+
+.footer-left .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-left .logo span {
+    color: #00C853;
+}
+
+.footer-right {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.footer-right a:hover {
+    color: #00C853;
+}
+
 .blog-container {
     width: 85%;
     height: auto;
@@ -285,47 +282,4 @@ img {
 
 .blog-right-bottom button:hover {
     background-color: #00a347;
-}
-footer {
-    background-color: #212121;
-    color: #fff;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-left {
-    max-width: 50%;
-}
-
-.footer-left .logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.footer-left .logo span {
-    color: #00C853;
-}
-
-.footer-left p {
-    font-size: 14px;
-    margin: 5px 0;
-}
-
-.footer-right {
-    display: flex;
-    gap: 15px;
-}
-
-.footer-right a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    transition: color 0.3s;
-}
-
-.footer-right a:hover {
-    color: #00C853;
 }
