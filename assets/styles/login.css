@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    font-family: 'Roboto', sans-serif;
+}
+
+form {  
+    border: 2px solid #f1f1f1;  
+    padding: 5px; /* Thêm padding cho form */
+    width: 300px; /* Đặt chiều rộng cố định cho form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thêm bóng cho form */
+    
+}  
+
+input[type=text], input[type=password] {  
+    width: 100%;  
+    padding: 12px 20px;  
+    margin: 8px 0;  
+    display: inline-block;  
+    border: 1px solid #ccc;  
+    box-sizing: border-box;  
+}  
+.forget {
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    
+}
+button {  
+    background-color: #4c5fea;  
+    color: white;  
+    padding: 14px 20px;  
+    margin: 8px auto;  
+    border: none;  
+    cursor: pointer;  
+    width: 100%;  
+    display: block;
+    border-radius: 6px;
+}  
+
+button:hover {  
+    opacity: 0.8;  
+}  
+
+.imgcontainer {  
+    text-align: center;  
+    margin: 24px 0 12px 0;  
+}  
+
+img.avatar {  
+    width: 30%; 
+    border-radius: 70%;  
+}  
+
+.container {  
+    padding: 16px; 
+}  
+
+
+.signup{
+    text-align: center;
+}
+.line{
+    text-align: center;
+    margin: 15px 0;
+    position: relative;
+    font-size: 14px;
+    color: #999;
+}
+.social-login button{
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    padding: 10px 20px;  
+    margin: 8px auto;  
+    display: inline-block;  
+    box-sizing: border-box;
+}
+.facebook-btn, .google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;  
+    padding: 14px 20px;  
+    margin: 8px 0;  
+    border: none;  /* Bỏ border để giống với nút Login */
+    border-radius: 6px;  /* Đảm bảo các nút có góc bo giống nhau */
+    cursor: pointer;  
+}
+.facebook-btn {
+    background-color: #4267B2;
+    color: white;
+}
+.google-btn {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.351);
+}
+.google-btn:hover {
+    background-color: #f0f0f0; /* Thêm hiệu ứng hover cho nút Google */
+}
+button.facebook-btn img, button.google-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+@media screen and (max-width: 300px) {  
+    span.psw {  
+        display: block;  
+        float: none;  
+    }  
+    .cancelbtn {  
+        width: 100%;  
+    }  
+}  
