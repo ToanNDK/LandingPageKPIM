@@ -1,182 +1,279 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Blog</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-
-    <!-- <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css"> -->
-    <link rel="stylesheet" href="/assets/styles/home.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="/assets/styles/home.css" />
+    <link rel="stylesheet" href="/assets/styles/global.css" />
+  </head>
+  <body>
     <!-- Header -->
     <div class="navbar">
-        <div class="logo">
-            COMPA<span>BLOG</span>
-        </div>
-        <div class="menu">
-            <a href="index.html"><i class=""></i> Home</a>
-            <a href="#"><i class=""></i> Course</a>
-            <a href="#"><i class=""></i> Technology</a>
-            <a href="#"><i class=""></i> Specialize</a>
-            <a href="#"><i class=""></i> About</a>
-        </div>
-        <div class="login">
-            <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
-            <a href="login.html"><i class="fas fa-sign-in-alt"></i> Sign In</a>
-        </div>
+      <div class="logo">COMPA<span>BLOG</span></div>
+      <div class="menu">
+        <a href="index.html"><i class=""></i> Home</a>
+        <a href="#"><i class=""></i> Course</a>
+        <a href="#"><i class=""></i> Technology</a>
+        <a href="#"><i class=""></i> Specialize</a>
+        <a href="#"><i class=""></i> About</a>
+      </div>
+      <div class="login">
+        <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
+        <a href="login.html"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+      </div>
     </div>
 
     <!-- "Tin Nổi Bật" Section -->
     <div class="news-section">
-        <h2>Tin nổi bật</h2>
-        <div class="news-items">
-            <div class="news-item">
-                <a href="login.html" class="news-link">
-                    <img src="./assets/images/Landing.jpg" alt="Blog 1 Image">
-                    <div class="news-details">
-                        <h3>Blog #1 - UI Testing là gì?</h3>
-                        <p class="category">Testing</p>
-                        <p class="author">Author1</p>
-                    </div>
-                </a>
+      <h2>Tin nổi bật</h2>
+      <div class="row">
+        <!-- Latest Image Section -->
+        <div class="col-8">
+          <div class="latest-item">
+            <img
+              src="./assets/images/Background.jpg"
+              alt="Blog Latest Image"
+              class="latest-img"
+            />
+            <div class="latest-content">
+              <span class="latest-label">Nổi bật</span>
+              <h2 class="latest-title"> UI Testing là gì?</h2>
+              <p class="latest-description">
+                Khám phá cách kiểm thử giao diện người dùng để đảm bảo trải
+                nghiệm tốt nhất!
+              </p>
+              <a href="detail.html" class="latest-read-more">Đọc thêm →</a>
             </div>
-            <div class="news-item">
-                <a href="blog2.html" class="news-link">
-                    <img src="./assets/images/Landing.jpg" alt="Blog 2 Image">
-                    <div class="news-details">
-                        <h3>Blog #2 - UI Testing là gì?</h3>
-                        <p class="category">Testing</p>
-                        <p class="author">Author2</p>
-                    </div>
-                </a>
-            </div>
-            <div class="news-item">
-                <a href="blog3.html" class="news-link">
-                    <img src="./assets/images/Landing.jpg" alt="Blog 3 Image">
-                    <div class="news-details">
-                        <h3>Blog #3 - UI Testing là gì?</h3>
-                        <p class="category">Testing</p>
-                        <p class="author">Author3</p>
-                    </div>
-                </a>
-            </div>
-            <div class="news-item">
-                <a href="blog1.html" class="news-link">
-                    <img src="./assets/images/Landing.jpg" alt="Blog 1 Image">
-                    <div class="news-details">
-                        <h3>Blog #4 - UI Testing là gì?</h3>
-                        <p class="category">Testing</p>
-                        <p class="author">Author1</p>
-                    </div>
-                </a>
-            </div>
-            <div class="news-item">
-                <a href="blog2.html" class="news-link">
-                    <img src="./assets/images/Landing.jpg" alt="Blog 2 Image">
-                    <div class="news-details">
-                        <h3>Blog #5 - UI Testing là gì?</h3>
-                        <p class="category">Testing</p>
-                        <p class="author">Author2</p>
-                    </div>
-                </a>
-            </div>
+          </div>
         </div>
+        <!-- Sidebar Section -->
+        <div class="col-4">
+          <ul class="latest-list">
+            <li><a href="detail.html">Blog #1 - UI Testing là gì?</a></li>
+            <li><a href="detail.html">Blog #2 - Lập trình hiệu quả</a></li>
+            <li><a href="detail.html">Blog #3 - Công nghệ AI mới</a></li>
+            <li><a href="detail.html">Blog #4 - Data Visualization</a></li>
+            <li><a href="detail.html">Blog #5 - Học Python từ đầu</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <!-- <script src="slick/slick.min.js"></script> -->
-    <script>
-        $(document).ready(function(){
-          $('.news-items').slick({
-            slidesToShow: 3,
-            slidesToScroll: 2,
-            autoplay: true,
-            autoplaySpeed: 1500,
-            prevArrow: '<button class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-            nextArrow: '<button class="slick-next"><i class="fas fa-chevron-right"></i></button>',
-          });
-        });
-      </script>
+
     <!-- "Dành Cho Bạn" Section -->
     <div class="news-section">
-        <h2>Dành cho bạn</h2>
-        <div class="news-items">
-            <div class="news-item">
-                <a href="blog4.html" class="news-link">
-                    <img src="./assets/images/Landing.jpg" alt="Blog 4 Image">
-                    <div class="news-details">
-                        <h3>Cách học lập trình hiệu quả</h3>
-                        <p class="category">Python</p>
-                        <p class="author">Author1</p>
-                    </div>
-                </a>
-            </div>
-            <div class="news-item">
-                <a href="blog4.html" class="news-link">
-                    <img src="./assets/images/Landing.jpg" alt="Blog 4 Image">
-                    <div class="news-details">
-                        <h3>Cách học lập trình hiệu quả</h3>
-                        <p class="category">Python</p>
-                        <p class="author">Author1</p>
-                    </div>
-                </a>
-            </div>
-            <div class="news-item">
-                <a href="blog4.html" class="news-link">
-                    <img src="./assets/images/Landing.jpg" alt="Blog 4 Image">
-                    <div class="news-details">
-                        <h3>Cách học lập trình hiệu quả</h3>
-                        <p class="category">Python</p>
-                        <p class="author">Author1</p>
-                    </div>
-                </a>
-            </div>
-            <div class="news-item">
-                <a href="blog4.html" class="news-link">
-                    <img src="./assets/images/Landing.jpg" alt="Blog 4 Image">
-                    <div class="news-details">
-                        <h3>Cách học lập trình hiệu quả</h3>
-                        <p class="category">Python</p>
-                        <p class="author">Author1</p>
-                    </div>
-                </a>
-            </div>
-            <div class="news-item">
-                <a href="blog5.html" class="news-link">
-                    <img src="./assets/images/Landing.jpg" alt="Blog 5 Image">
-                    <div class="news-details">
-                        <h3>Khám phá công nghệ AI</h3>
-                        <p class="category">Python</p>
-                        <p class="author">Author2</p>
-                    </div>
-                </a>
-            </div>
+      <h2>Dành cho bạn</h2>
+      <div class="col-8">
+        <div class="news-carousel">
+          <div class="news-item">
+            <a href="blog1.html" class="news-link">
+              <img src="./assets/images/Background.jpg" alt="Blog 1 Image" />
+              <div class="news-details">
+                <h3>Cách học lập trình hiệu quả</h3>
+                <p class="category">Python</p>
+                <p class="author">Author1</p>
+              </div>
+            </a>
+          </div>
+          <div class="news-item">
+            <a href="blog2.html" class="news-link">
+              <img src="./assets/images/Background.jpg" alt="Blog 2 Image" />
+              <div class="news-details">
+                <h3>Hướng dẫn cơ bản về AI</h3>
+                <p class="category">AI</p>
+                <p class="author">Author2</p>
+              </div>
+            </a>
+          </div>
+          <div class="news-item">
+            <a href="blog3.html" class="news-link">
+              <img src="./assets/images/Background.jpg" alt="Blog 3 Image" />
+              <div class="news-details">
+                <h3>Data Visualization từ đầu</h3>
+                <p class="category">Data</p>
+                <p class="author">Author3</p>
+              </div>
+            </a>
+          </div>
+          <div class="news-item">
+            <a href="blog3.html" class="news-link">
+              <img src="./assets/images/Background.jpg" alt="Blog 3 Image" />
+              <div class="news-details">
+                <h3>Data Visualization từ đầu</h3>
+                <p class="category">Data</p>
+                <p class="author">Author3</p>
+              </div>
+            </a>
+          </div>
+          <div class="news-item">
+            <a href="blog3.html" class="news-link">
+              <img src="./assets/images/Background.jpg" alt="Blog 3 Image" />
+              <div class="news-details">
+                <h3>Data Visualization từ đầu</h3>
+                <p class="category">Data</p>
+                <p class="author">Author3</p>
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(".news-carousel").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow:
+          '<button class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow:
+          '<button class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+      });
+    </script>
 
+    <!-- "All Posts" Section -->
+    <div class="news-section">
+      <h2>All Posts</h2>
+      <div class="container-post">
+        <div class="row">
+          <!-- Post Item 1 -->
+          <div class="col-4">
+            <div class="latest-item">
+              <img
+                src="./assets/images/Background.jpg"
+                alt="Post 2 Image"
+                class="latest-img"
+              />
+              <div class="latest-content">
+                <span class="latest-label">Post</span>
+                <h2 class="latest-title">Post Title 1</h2>
+                <p class="latest-description">
+                  Brief description of the post...
+                </p>
+                <a href="post2.html" class="latest-read-more">Read more →</a>
+              </div>
+            </div>
+          </div>
+          <!-- Post Item 2 -->
+          <div class="col-4">
+            <div class="latest-item">
+              <img
+                src="./assets/images/Background.jpg"
+                alt="Post 2 Image"
+                class="latest-img"
+              />
+              <div class="latest-content">
+                <span class="latest-label">Post</span>
+                <h2 class="latest-title">Post Title 2</h2>
+                <p class="latest-description">
+                  Brief description of the post...
+                </p>
+                <a href="post2.html" class="latest-read-more">Read more →</a>
+              </div>
+            </div>
+          </div>
+          <!-- Post Item 3 -->
+          <div class="col-4">
+            <div class="latest-item">
+              <img
+                src="./assets/images/Background.jpg"
+                alt="Post 3 Image"
+                class="latest-img"
+              />
+              <div class="latest-content">
+                <span class="latest-label">Post</span>
+                <h2 class="latest-title">Post Title 3</h2>
+                <p class="latest-description">
+                  Brief description of the post...
+                </p>
+                <a href="post3.html" class="latest-read-more">Read more →</a>
+              </div>
+            </div>
+          </div>
+          <!-- Post Item 4 -->
+          <div class="col-4">
+            <div class="latest-item">
+              <img
+                src="./assets/images/Background.jpg"
+                alt="Post 4 Image"
+                class="latest-img"
+              />
+              <div class="latest-content">
+                <span class="latest-label">Post</span>
+                <h2 class="latest-title">Post Title 4</h2>
+                <p class="latest-description">
+                  Brief description of the post...
+                </p>
+                <a href="post4.html" class="latest-read-more">Read more →</a>
+              </div>
+            </div>
+          </div>
+          <!-- Post Item 5 -->
+          <div class="col-4">
+            <div class="latest-item">
+              <img
+                src="./assets/images/Background.jpg"
+                alt="Post 5 Image"
+                class="latest-img"
+              />
+              <div class="latest-content">
+                <span class="latest-label">Post</span>
+                <h2 class="latest-title">Post Title 5</h2>
+                <p class="latest-description">
+                  Brief description of the post...
+                </p>
+                <a href="post5.html" class="latest-read-more">Read more →</a>
+              </div>
+            </div>
+          </div>
+          <!-- Post Item 6 -->
+          <div class="col-4">
+            <div class="latest-item">
+              <img
+                src="./assets/images/Background.jpg"
+                alt="Post 6 Image"
+                class="latest-img"
+              />
+              <div class="latest-content">
+                <span class="latest-label">Post</span>
+                <h2 class="latest-title">Post Title 6</h2>
+                <p class="latest-description">
+                  Brief description of the post...
+                </p>
+                <a href="post6.html" class="latest-read-more">Read more →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Footer -->
     <footer>
-        <div class="footer-left">
-            <div class="logo">COMPA<span>CLASS</span></div>
-            <p>&copy; 2024 Kpim — Design Team</p>
-        </div>
-        <div class="footer-right">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-google"></i></a>
-        </div>
+      <div class="footer-left">
+        <div class="logo">COMPA<span>CLASS</span></div>
+        <p>&copy; 2024 Kpim — Design Team</p>
+      </div>
+      <div class="footer-right">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-google"></i></a>
+      </div>
     </footer>
-</body>
-
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
+  </body>
 </html>
