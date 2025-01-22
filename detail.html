@@ -36,12 +36,17 @@
     <!-- Header -->
     <div class="navbar">
       <div class="logo">COMPA<span>BLOG</span></div>
+      <button class="hide-navbar"><i class="fas fa-bars"></i></button>
       <div class="menu">
-        <a href="index.html"><i class=""></i> Home</a>
+        <a href="home.html"><i class=""></i> Home</a>
         <a href="#"><i class=""></i> Course</a>
         <a href="#"><i class=""></i> Technology</a>
         <a href="#"><i class=""></i> Specialize</a>
-        <a href="#"><i class=""></i> About</a>
+        <a href="about.html"><i class=""></i> About</a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+        <button><i class="fas fa-search"></i></button>
       </div>
       <div class="login">
         <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
@@ -72,7 +77,7 @@
     <div class="content">
       <div class="main">
         <h2>UI TESTING WEBSITE</h2>
-        <h3>UI là gì</h3>
+        <h3 id="section1">UI là gì</h3>
         <p>
           UI là từ viết tắt của User Interface (Giao diện người dùng). UI là bao
           gồm tất cả những gì người dùng có thể nhìn thấy như kích thước các
@@ -86,7 +91,7 @@
           hiện đại, bắt mắt, hài hòa sẽ giúp người dùng cảm thấy hứng thú, thu
           hút sự chú ý của người dùng.
         </p>
-        <h3>Các vấn đề cơ bản trong phát triển UI</h3>
+        <h3 id="section2">Các vấn đề cơ bản trong phát triển UI</h3>
         <p>
           Tính trực quan là một yếu tố vô cùng quan trọng trong thiêt kế UI.
           Giao diện người dùng phải được thiết kế sao cho người sử dụng có thể
@@ -120,7 +125,7 @@
           chịu. Điều này gây ảnh hưởng nghiêm trọng đến sự quan tâm của người
           dùng.
         </p>
-        <h3>Vai trò của phát triển UI</h3>
+        <h3 id="section3">Vai trò của phát triển UI</h3>
         <p>
           Như đã nói bên trên, một giao diện người dùng bắt mắt, hiện đại sẽ
           thúc đẩy việc thu hút người dùng ở lại và tìm hiểu trang web. Một
@@ -140,9 +145,9 @@
       <div class="sidebar">
         <h3>Content</h3>
         <ul>
-          <li><a href="#">UI là gì</a></li>
-          <li><a href="#">Các vấn đề cơ bản của UI</a></li>
-          <li><a href="#">Vai trò của phát triển UI</a></li>
+          <li><a href="#section1">UI là gì</a></li>
+          <li><a href="#section2">Các vấn đề cơ bản của UI</a></li>
+          <li><a href="#section3">Vai trò của phát triển UI</a></li>
         </ul>
       </div>
     </div>
@@ -208,8 +213,8 @@
   <script>
     $(document).ready(function () {
       $(".news-items").slick({
-        slidesToShow: 3,
-        slidesToScroll: 2,
+        slidesToShow: 4,
+        slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1500,
         prevArrow:
@@ -237,4 +242,14 @@
   type="text/javascript"
   src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
 ></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.querySelector(".hide-navbar");
+    const menu = document.querySelector(".navbar .menu");
+
+    toggleButton.addEventListener("click", function () {
+      menu.classList.toggle("show"); // Tạo hiệu ứng toggle cho menu
+    });
+  });
+</script>
 </html>
