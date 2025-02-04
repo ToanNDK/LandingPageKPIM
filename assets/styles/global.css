@@ -10,7 +10,10 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
 }
-
+header, footer {
+  width: 100%;
+  box-sizing: border-box;
+}
 .navbar {
     display: flex;
     align-items: center;
