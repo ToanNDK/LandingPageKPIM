@@ -153,77 +153,93 @@
     </div>
 <!-- "Tin Nổi Bật" Section -->
 <div class="news-section">
-    <h2>Tin nổi bật</h2>
-    <div class="news-items">
+  <h2>Dành cho bạn</h2>
+  <div class="col-8">
+    <div class="news-carousel">
       <div class="news-item">
-        <a href="detail.html" class="news-link">
-          <img src="./assets/images/Landing.jpg" alt="Blog 1 Image" />
+        <a href="blog1.html" class="news-link">
+          <img src="./assets/images/Background.jpg" alt="Blog 1 Image" />
           <div class="news-details">
-            <h3>Blog #1 - UI Testing là gì?</h3>
-            <p class="category">Testing</p>
+            <h3>Cách học lập trình hiệu quả</h3>
+            <p class="category">Python</p>
             <p class="author">Author1</p>
           </div>
         </a>
       </div>
       <div class="news-item">
-          <a href="detail.html" class="news-link">
-          <img src="./assets/images/Landing.jpg" alt="Blog 2 Image" />
+        <a href="blog2.html" class="news-link">
+          <img src="./assets/images/Background.jpg" alt="Blog 2 Image" />
           <div class="news-details">
-            <h3>Blog #2 - UI Testing là gì?</h3>
-            <p class="category">Testing</p>
+            <h3>Hướng dẫn cơ bản về AI</h3>
+            <p class="category">AI</p>
             <p class="author">Author2</p>
           </div>
         </a>
       </div>
       <div class="news-item">
-          <a href="detail.html" class="news-link">
-          <img src="./assets/images/Landing.jpg" alt="Blog 3 Image" />
+        <a href="blog3.html" class="news-link">
+          <img src="./assets/images/Background.jpg" alt="Blog 3 Image" />
           <div class="news-details">
-            <h3>Blog #3 - UI Testing là gì?</h3>
-            <p class="category">Testing</p>
+            <h3>Data Visualization từ đầu</h3>
+            <p class="category">Data</p>
             <p class="author">Author3</p>
           </div>
         </a>
       </div>
       <div class="news-item">
-          <a href="detail.html" class="news-link">
-          <img src="./assets/images/Landing.jpg" alt="Blog 1 Image" />
+        <a href="blog3.html" class="news-link">
+          <img src="./assets/images/Background.jpg" alt="Blog 3 Image" />
           <div class="news-details">
-            <h3>Blog #4 - UI Testing là gì?</h3>
-            <p class="category">Testing</p>
-            <p class="author">Author1</p>
+            <h3>Data Visualization từ đầu</h3>
+            <p class="category">Data</p>
+            <p class="author">Author3</p>
           </div>
         </a>
       </div>
       <div class="news-item">
-          <a href="detail.html" class="news-link">
-          <img src="./assets/images/man.jpg" alt="Blog 2 Image" />
+        <a href="blog3.html" class="news-link">
+          <img src="./assets/images/Background.jpg" alt="Blog 3 Image" />
           <div class="news-details">
-            <h3>Blog #5 - UI Testing là gì?</h3>
-            <p class="category">Testing</p>
-            <p class="author">Author2</p>
+            <h3>Data Visualization từ đầu</h3>
+            <p class="category">Data</p>
+            <p class="author">Author3</p>
           </div>
         </a>
       </div>
     </div>
   </div>
+</div>
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <!-- <script src="slick/slick.min.js"></script> -->
-  <script>
-    $(document).ready(function () {
-      $(".news-items").slick({
+  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(".news-carousel").slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 2500,
         prevArrow:
           '<button class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
         nextArrow:
           '<button class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+          responsive: [
+    {
+      breakpoint: 992, 
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 768, // 
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+  ],
       });
-    });
-  </script>
+    </script>
     <!-- Footer -->
     <footer>
       <div class="footer-left">
